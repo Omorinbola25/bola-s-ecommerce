@@ -21,7 +21,7 @@ const PROMO_CODES: Record<string, number> = {
 };
 
 const TRUST_BADGES = [
-  { icon: Truck, label: "Free Shipping", sub: "On orders over $150" },
+  { icon: Truck, label: "Free Shipping", sub: "On orders over #150" },
   { icon: Shield, label: "Secure Payment", sub: "256-bit SSL encryption" },
   { icon: RotateCcw, label: "360-Day Returns", sub: "No questions asked" },
 ];
@@ -198,11 +198,11 @@ export default function CartPage() {
                     </div>
                     <div className="text-right">
                       <p className="font-bold text-gray-900 text-base">
-                        ${(item.price * item.qty).toFixed(2)}
+                        #{(item.price * item.qty).toFixed(2)}
                       </p>
                       {item.qty > 1 && (
                         <p className="text-xs text-gray-400">
-                          ${item.price.toFixed(2)} each
+                          #{item.price.toFixed(2)} each
                         </p>
                       )}
                     </div>
@@ -312,7 +312,7 @@ export default function CartPage() {
                       </span>
                     </div>
                     <span className="text-gray-800 font-medium flex-shrink-0 ml-2">
-                      ${(item.price * item.qty).toFixed(2)}
+                      #{(item.price * item.qty).toFixed(2)}
                     </span>
                   </div>
                 ))}
@@ -324,7 +324,7 @@ export default function CartPage() {
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-400 font-light">Subtotal</span>
                   <span className="text-gray-800 font-medium">
-                    ${subtotal.toFixed(2)}
+                    #{subtotal.toFixed(2)}
                   </span>
                 </div>
                 {appliedPromo && (
@@ -333,7 +333,7 @@ export default function CartPage() {
                       Discount ({appliedPromo.pct}%)
                     </span>
                     <span className="text-green-500 font-medium">
-                      −${discount.toFixed(2)}
+                      −#{discount.toFixed(2)}
                     </span>
                   </div>
                 )}
@@ -343,13 +343,13 @@ export default function CartPage() {
                     <span className="text-green-500 font-medium">Free</span>
                   ) : (
                     <span className="text-gray-800 font-medium">
-                      ${shipping.toFixed(2)}
+                      #{shipping.toFixed(2)}
                     </span>
                   )}
                 </div>
                 {shipping > 0 && (
                   <p className="text-[10px] text-gray-300">
-                    Add ${(150 - (subtotal - discount)).toFixed(2)} more for
+                    Add #{(150 - (subtotal - discount)).toFixed(2)} more for
                     free shipping
                   </p>
                 )}
@@ -360,10 +360,10 @@ export default function CartPage() {
                   <span className="font-bold text-gray-900">Total</span>
                   <div className="text-right">
                     <span className="font-bold text-xl text-gray-900">
-                      ${total.toFixed(2)}
+                      #{total.toFixed(2)}
                     </span>
                     <p className="text-[10px] text-gray-400">
-                      USD, taxes included
+                      NGN, taxes included
                     </p>
                   </div>
                 </div>

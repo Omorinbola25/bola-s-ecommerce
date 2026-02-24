@@ -1,0 +1,11 @@
+import favkins from "../assets/favour.png.jpg";
+import bolu from "../assets/tifeh.png.jpg";
+import dami from "../assets/dammy.png.jpg";
+import tola from "../assets/Tola.png.jpg";
+import keyboard from "../assets/keyboard.jpg";
+import leatherBag from "../assets/leatherBag.jpg";
+import notebook from "../assets/notebook.avif";
+import pen from "../assets/pen.jpg";
+import scarf from "../assets/scarf.avif";
+import watch from "../assets/watch.png";
+export { favkins, bolu, tola, dami, keyboard, leatherBag, notebook, pen, scarf, watch, };
