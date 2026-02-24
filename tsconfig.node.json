@@ -9,8 +9,10 @@
     "skipLibCheck": true,
 
     /* Bundler mode */
-   "moduleResolution": "bundler",
-"verbatimModuleSyntax": true,
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
     "moduleDetection": "force",
 
     /* Linting */
